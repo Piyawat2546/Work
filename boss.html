@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Product Store</title>
+</head>
+<body>
+    <header>
+          <img src="https://1000logos.net/wp-content/uploads/2021/04/HyperX-logo.jpg" alt="Header Logo" width="500px">
+    </header>
+    
+    <section class="product-list">
+        
+        <div class="product">
+          
+            <img src="https://hyperx.com/cdn/shop/files/hyperx_pulsefire_haste_wireless_white_1_top_down_900x.jpg?v=1689065052" alt="Product 1" width="350px">
+            <h2>HyperX Pulsefire Haste - Wireless Gaming Mouse</h2>
+            <p>$59.99</p>
+            <div class="quantity-control">
+              <div class="quantity-input">
+                  <input type="number" class="quantity" value="1" min="1">
+                  <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+              </div>
+              <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+          </div>
+      </div>
+        <div class="product">
+            <img src="https://hyperx.com/cdn/shop/files/hyperx_quadcast_s_2_side_900x.jpg?v=1688318304" alt="Product 2" width="350px">
+            <h2>HyperX QuadCast S - USB Microphone</h2>
+            <p>$159.99</p>
+            <div class="quantity-control">
+              <div class="quantity-input">
+                  <input type="number" class="quantity" value="1" min="1">
+                  <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+              </div>
+              <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+          </div>
+      </div>
+        <br><div class="product">
+            <img src="https://hyperx.com/cdn/shop/files/hyperx_cloud_20flight_1_main_duplicate_900x.jpg?v=1689065039" alt="Product 3" width="350px">
+            <h2>HyperX Cloud Flight - Wireless Gaming Headset</h2>
+            <p>$79.99</p>
+            <div class="quantity-control">
+              <div class="quantity-input">
+                  <input type="number" class="quantity" value="1" min="1">
+                  <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+              </div>
+              <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+          </div>
+      </div>
+        <div class="product">
+          <img src="https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_60_us_3_angled_right_renamed_8_900x.jpg?v=1688318269" alt="Product 4" width="350px">
+          <h2>HyperX Alloy Origins 60 - Mechanical Gaming Keyboard</h2>
+          <p>$69.99</p>
+          <div class="quantity-control">
+              <div class="quantity-input">
+                  <input type="number" class="quantity" value="1" min="1">
+                  <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+              </div>
+              <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+          </div>
+      </div>
+
+        <section class="shopping-basket">
+          <h2>Your Shopping Basket</h2>
+          <ul id="basket-items"></ul>
+          <div class="kkk">
+            <div class="center-button">
+                <button onclick="confirmOrder()">ยืนยันรายการ</button>
+            </div>
+        </div>
+      </section>
+
+<script src="java.js"></script>
+
